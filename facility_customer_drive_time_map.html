@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5e02b7ee15d46db000e87f5f73d6ea38 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5e02b7ee15d46db000e87f5f73d6ea38" ></div>
+        
+</body>
+<script>    
+    
+            var map_5e02b7ee15d46db000e87f5f73d6ea38 = L.map(
+                "map_5e02b7ee15d46db000e87f5f73d6ea38",
+                {
+                    center: [40.0, -80.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1c3ed4ff38d7e97b69b41cacd1a0e295 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+            var circle_marker_43bfc28a531b8b05559d924004eb5b12 = L.circleMarker(
+                [43.007724, -87.997049],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_cd2390251633ef1b8b2f3e5a7ecaf29c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f2aee13847e14a7cb91aa523eeaab80 = $(`<div id="html_2f2aee13847e14a7cb91aa523eeaab80" style="width: 100.0%; height: 100.0%;">Facility: WI - Brookfield<br>Customers: 1552<br>Avg Drive Time: 98.82 mins</div>`)[0];
+                popup_cd2390251633ef1b8b2f3e5a7ecaf29c.setContent(html_2f2aee13847e14a7cb91aa523eeaab80);
+            
+        
+
+        circle_marker_43bfc28a531b8b05559d924004eb5b12.bindPopup(popup_cd2390251633ef1b8b2f3e5a7ecaf29c)
+        ;
+
+        
+    
+    
+            var circle_marker_01b726c0b79444a911cfa395d0b022b3 = L.circleMarker(
+                [41.9518616, -87.6411118],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_a4d20c43be3d744ab3c6b983d71f31da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7660544a77d5e6552f1b62055be21ee1 = $(`<div id="html_7660544a77d5e6552f1b62055be21ee1" style="width: 100.0%; height: 100.0%;">Facility: Waveland Park (Outdoor)<br>Customers: 2290<br>Avg Drive Time: 48.97 mins</div>`)[0];
+                popup_a4d20c43be3d744ab3c6b983d71f31da.setContent(html_7660544a77d5e6552f1b62055be21ee1);
+            
+        
+
+        circle_marker_01b726c0b79444a911cfa395d0b022b3.bindPopup(popup_a4d20c43be3d744ab3c6b983d71f31da)
+        ;
+
+        
+    
+    
+            var circle_marker_5e66350e8ce83af5ec065c63c6dd6e7c = L.circleMarker(
+                [42.103653, -88.289945],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 53.53, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_524dda1d6ed7b6a0dc8ac84926711f98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8204ecb5c82dd9aa3cc4b6b75fd1da58 = $(`<div id="html_8204ecb5c82dd9aa3cc4b6b75fd1da58" style="width: 100.0%; height: 100.0%;">Facility: West Dundee <br>Customers: 53530<br>Avg Drive Time: 44.53 mins</div>`)[0];
+                popup_524dda1d6ed7b6a0dc8ac84926711f98.setContent(html_8204ecb5c82dd9aa3cc4b6b75fd1da58);
+            
+        
+
+        circle_marker_5e66350e8ce83af5ec065c63c6dd6e7c.bindPopup(popup_524dda1d6ed7b6a0dc8ac84926711f98)
+        ;
+
+        
+    
+    
+            var circle_marker_d443efb10a080607ad9caa4259fc3500 = L.circleMarker(
+                [41.90909, -87.6843081],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_386d9e384f56f151696895e7dabea99f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d8f88b006a7a89cd277eb5c86442570 = $(`<div id="html_8d8f88b006a7a89cd277eb5c86442570" style="width: 100.0%; height: 100.0%;">Facility: Wicker Park- (Josephinum Academy)<br>Customers: 5227<br>Avg Drive Time: 11.57 mins</div>`)[0];
+                popup_386d9e384f56f151696895e7dabea99f.setContent(html_8d8f88b006a7a89cd277eb5c86442570);
+            
+        
+
+        circle_marker_d443efb10a080607ad9caa4259fc3500.bindPopup(popup_386d9e384f56f151696895e7dabea99f)
+        ;
+
+        
+    
+    
+            var circle_marker_175df249f444371b3d19b7144866a892 = L.circleMarker(
+                [41.92172, -87.6851],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_a3cc131feb80121a871d986cfd1a5bb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dfcccb4f2f64e0d8fb58e5e9b7bb882 = $(`<div id="html_4dfcccb4f2f64e0d8fb58e5e9b7bb882" style="width: 100.0%; height: 100.0%;">Facility: Wicker Park - (Holstein Park)<br>Customers: 2210<br>Avg Drive Time: 13.52 mins</div>`)[0];
+                popup_a3cc131feb80121a871d986cfd1a5bb5.setContent(html_4dfcccb4f2f64e0d8fb58e5e9b7bb882);
+            
+        
+
+        circle_marker_175df249f444371b3d19b7144866a892.bindPopup(popup_a3cc131feb80121a871d986cfd1a5bb5)
+        ;
+
+        
+    
+    
+            var circle_marker_e4852c0832bc3e3927bc3cfcc109d9fe = L.circleMarker(
+                [41.92172, -87.6851],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_398cd4865d598c995da289cb3eb3c858 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6ace7bb968b3788da73ccb557147936 = $(`<div id="html_a6ace7bb968b3788da73ccb557147936" style="width: 100.0%; height: 100.0%;">Facility: Wicker Park/Bucktown - (Holstein Park)<br>Customers: 2478<br>Avg Drive Time: 6.47 mins</div>`)[0];
+                popup_398cd4865d598c995da289cb3eb3c858.setContent(html_a6ace7bb968b3788da73ccb557147936);
+            
+        
+
+        circle_marker_e4852c0832bc3e3927bc3cfcc109d9fe.bindPopup(popup_398cd4865d598c995da289cb3eb3c858)
+        ;
+
+        
+    
+    
+            var circle_marker_ab80371495bf19954eab2c67f13e6d94 = L.circleMarker(
+                [43.1429294, -87.9495524],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_90536661407e405d5bd8336170032c80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18296db4c2e01c969dbc65693e9bd8d2 = $(`<div id="html_18296db4c2e01c969dbc65693e9bd8d2" style="width: 100.0%; height: 100.0%;">Facility: WI - Glendale<br>Customers: 4274<br>Avg Drive Time: 43.06 mins</div>`)[0];
+                popup_90536661407e405d5bd8336170032c80.setContent(html_18296db4c2e01c969dbc65693e9bd8d2);
+            
+        
+
+        circle_marker_ab80371495bf19954eab2c67f13e6d94.bindPopup(popup_90536661407e405d5bd8336170032c80)
+        ;
+
+        
+    
+    
+            var circle_marker_00480dfe0628af7ccb762bc809190495 = L.circleMarker(
+                [41.80453, -87.845021],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.918, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_e9e1378276b7648bd2c20c7e290a9ff5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b81903ae9803fcb58690ec798722ba4 = $(`<div id="html_5b81903ae9803fcb58690ec798722ba4" style="width: 100.0%; height: 100.0%;">Facility: Max-McCook <br>Customers: 12918<br>Avg Drive Time: 12.51 mins</div>`)[0];
+                popup_e9e1378276b7648bd2c20c7e290a9ff5.setContent(html_5b81903ae9803fcb58690ec798722ba4);
+            
+        
+
+        circle_marker_00480dfe0628af7ccb762bc809190495.bindPopup(popup_e9e1378276b7648bd2c20c7e290a9ff5)
+        ;
+
+        
+    
+    
+            var circle_marker_590a922c24ddd7091e5e6d83372d58f5 = L.circleMarker(
+                [41.9506739, -87.6947657],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.054, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_1dd7cd037d5b47f6fed3c88dee398bf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e532b9435a09ff6ea34fae241cbfb6f3 = $(`<div id="html_e532b9435a09ff6ea34fae241cbfb6f3" style="width: 100.0%; height: 100.0%;">Facility: Roscoe Village - Bradley Place<br>Customers: 31054<br>Avg Drive Time: 11.84 mins</div>`)[0];
+                popup_1dd7cd037d5b47f6fed3c88dee398bf6.setContent(html_e532b9435a09ff6ea34fae241cbfb6f3);
+            
+        
+
+        circle_marker_590a922c24ddd7091e5e6d83372d58f5.bindPopup(popup_1dd7cd037d5b47f6fed3c88dee398bf6)
+        ;
+
+        
+    
+    
+            var circle_marker_40b84c95c0a4e6dfd2ff44f9a47a1120 = L.circleMarker(
+                [41.94631000127121, -87.86511871854417],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_86c6ed61f8f38ff9de491acb9ba0afa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de0ee7a93d5c09c26f7931ef167d4145 = $(`<div id="html_de0ee7a93d5c09c26f7931ef167d4145" style="width: 100.0%; height: 100.0%;">Facility: In the Zone Health and Fitness Center<br>Customers: 4761<br>Avg Drive Time: 21.78 mins</div>`)[0];
+                popup_86c6ed61f8f38ff9de491acb9ba0afa2.setContent(html_de0ee7a93d5c09c26f7931ef167d4145);
+            
+        
+
+        circle_marker_40b84c95c0a4e6dfd2ff44f9a47a1120.bindPopup(popup_86c6ed61f8f38ff9de491acb9ba0afa2)
+        ;
+
+        
+    
+    
+            var circle_marker_29f031b3e8daf4d9ff958d7b061d193d = L.circleMarker(
+                [41.885319, -87.6468],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.281, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_4e95d576304c7877ab11ffc260cbfec0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_094ad2db36944632aaa3b4e5bbeacd15 = $(`<div id="html_094ad2db36944632aaa3b4e5bbeacd15" style="width: 100.0%; height: 100.0%;">Facility: West Loop - Lake Street<br>Customers: 11281<br>Avg Drive Time: 10.38 mins</div>`)[0];
+                popup_4e95d576304c7877ab11ffc260cbfec0.setContent(html_094ad2db36944632aaa3b4e5bbeacd15);
+            
+        
+
+        circle_marker_29f031b3e8daf4d9ff958d7b061d193d.bindPopup(popup_4e95d576304c7877ab11ffc260cbfec0)
+        ;
+
+        
+    
+    
+            var circle_marker_0b6d5b51cb2cd95de628355524e3260e = L.circleMarker(
+                [42.2400002, -87.9433895],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_d4906db8096ab9bde603ca9c3cf0b42a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f004cd9bbc490b2bf191caefab4b2e6 = $(`<div id="html_3f004cd9bbc490b2bf191caefab4b2e6" style="width: 100.0%; height: 100.0%;">Facility: Vernon Hills<br>Customers: 8804<br>Avg Drive Time: 15.73 mins</div>`)[0];
+                popup_d4906db8096ab9bde603ca9c3cf0b42a.setContent(html_3f004cd9bbc490b2bf191caefab4b2e6);
+            
+        
+
+        circle_marker_0b6d5b51cb2cd95de628355524e3260e.bindPopup(popup_d4906db8096ab9bde603ca9c3cf0b42a)
+        ;
+
+        
+    
+    
+            var circle_marker_69ba5308b7399a609dd2806adb9069d3 = L.circleMarker(
+                [41.950777, -87.695246],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.402, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_dd0dbb97f1455dc55ae2a8234104caeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed527ee5ca3e53e97aaf1d534bceed64 = $(`<div id="html_ed527ee5ca3e53e97aaf1d534bceed64" style="width: 100.0%; height: 100.0%;">Facility: LKSOCCER.COM Corporate<br>Customers: 35402<br>Avg Drive Time: 33.12 mins</div>`)[0];
+                popup_dd0dbb97f1455dc55ae2a8234104caeb.setContent(html_ed527ee5ca3e53e97aaf1d534bceed64);
+            
+        
+
+        circle_marker_69ba5308b7399a609dd2806adb9069d3.bindPopup(popup_dd0dbb97f1455dc55ae2a8234104caeb)
+        ;
+
+        
+    
+    
+            var circle_marker_567b4b86909ef8b9366c9005bf405823 = L.circleMarker(
+                [42.117661, -88.016131],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_6013026aeda37c4fc77b44f068191729 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97df67b2070ccd01dbff4e058c7a369c = $(`<div id="html_97df67b2070ccd01dbff4e058c7a369c" style="width: 100.0%; height: 100.0%;">Facility: LaGrange "Park Jr. High" (Outdoor)<br>Customers: 234<br>Avg Drive Time: 31.08 mins</div>`)[0];
+                popup_6013026aeda37c4fc77b44f068191729.setContent(html_97df67b2070ccd01dbff4e058c7a369c);
+            
+        
+
+        circle_marker_567b4b86909ef8b9366c9005bf405823.bindPopup(popup_6013026aeda37c4fc77b44f068191729)
+        ;
+
+        
+    
+    
+            var circle_marker_55ca6f5fef6b33acd3544f8f37a1876b = L.circleMarker(
+                [42.117661, -88.016131],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_4a876d81dc55af801912f3a370981932 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89bab8b51b27bd2a0d35e38602de437a = $(`<div id="html_89bab8b51b27bd2a0d35e38602de437a" style="width: 100.0%; height: 100.0%;">Facility: Palatine (Outdoor)<br>Customers: 331<br>Avg Drive Time: 42.53 mins</div>`)[0];
+                popup_4a876d81dc55af801912f3a370981932.setContent(html_89bab8b51b27bd2a0d35e38602de437a);
+            
+        
+
+        circle_marker_55ca6f5fef6b33acd3544f8f37a1876b.bindPopup(popup_4a876d81dc55af801912f3a370981932)
+        ;
+
+        
+    
+    
+            var circle_marker_1e66574d5af48c81271bcd90f68574b5 = L.circleMarker(
+                [41.88036788206655, -87.79402408142384],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_d87c77584fbc62521aeeab31133cb322 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dce687697163202bd16ca4e5c53bd111 = $(`<div id="html_dce687697163202bd16ca4e5c53bd111" style="width: 100.0%; height: 100.0%;">Facility: Oak Park<br>Customers: 3067<br>Avg Drive Time: 15.37 mins</div>`)[0];
+                popup_d87c77584fbc62521aeeab31133cb322.setContent(html_dce687697163202bd16ca4e5c53bd111);
+            
+        
+
+        circle_marker_1e66574d5af48c81271bcd90f68574b5.bindPopup(popup_d87c77584fbc62521aeeab31133cb322)
+        ;
+
+        
+    
+    
+            var circle_marker_94f0343a0b2b0d6c299966767318acc7 = L.circleMarker(
+                [41.9977102, -88.0586917],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_36a17fb3f73366318d6c7008a2f5882f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f7b54243aeb8fd510abfdb2da7f7462 = $(`<div id="html_5f7b54243aeb8fd510abfdb2da7f7462" style="width: 100.0%; height: 100.0%;">Facility: Roselle / Schaumburg<br>Customers: 6920<br>Avg Drive Time: 21.60 mins</div>`)[0];
+                popup_36a17fb3f73366318d6c7008a2f5882f.setContent(html_5f7b54243aeb8fd510abfdb2da7f7462);
+            
+        
+
+        circle_marker_94f0343a0b2b0d6c299966767318acc7.bindPopup(popup_36a17fb3f73366318d6c7008a2f5882f)
+        ;
+
+        
+    
+    
+            var circle_marker_572efd703f7b662d390e00bdeea0d840 = L.circleMarker(
+                [42.0309634, -87.7834632],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_c6e1b82f7d8493f8fd27e729303d9bd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_355508bd62fd3ca5a5e9565e0f6c78a2 = $(`<div id="html_355508bd62fd3ca5a5e9565e0f6c78a2" style="width: 100.0%; height: 100.0%;">Facility: LKSOCCER.COM Corporate<br>Customers: 2<br>Avg Drive Time: nan mins</div>`)[0];
+                popup_c6e1b82f7d8493f8fd27e729303d9bd1.setContent(html_355508bd62fd3ca5a5e9565e0f6c78a2);
+            
+        
+
+        circle_marker_572efd703f7b662d390e00bdeea0d840.bindPopup(popup_c6e1b82f7d8493f8fd27e729303d9bd1)
+        ;
+
+        
+    
+    
+            var circle_marker_f737d81f44eb736d6fef0f9299f5775c = L.circleMarker(
+                [42.0309634, -87.7834632],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_20be535a349f2b5cb305774d0fa77478 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aef4e4e89ddfe586d1bc8063e70a93db = $(`<div id="html_aef4e4e89ddfe586d1bc8063e70a93db" style="width: 100.0%; height: 100.0%;">Facility: North Shore / Morton Grove<br>Customers: 3041<br>Avg Drive Time: 18.35 mins</div>`)[0];
+                popup_20be535a349f2b5cb305774d0fa77478.setContent(html_aef4e4e89ddfe586d1bc8063e70a93db);
+            
+        
+
+        circle_marker_f737d81f44eb736d6fef0f9299f5775c.bindPopup(popup_20be535a349f2b5cb305774d0fa77478)
+        ;
+
+        
+    
+    
+            var circle_marker_c388501d490258a368991238f725b87b = L.circleMarker(
+                [42.011233, -87.840603],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.785, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_7ba0737623c9ee68f25c27cd59e3a813 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89673d28568e00a38c08f399c73aac42 = $(`<div id="html_89673d28568e00a38c08f399c73aac42" style="width: 100.0%; height: 100.0%;">Facility: Park Ridge (Outdoor)<br>Customers: 14785<br>Avg Drive Time: 16.82 mins</div>`)[0];
+                popup_7ba0737623c9ee68f25c27cd59e3a813.setContent(html_89673d28568e00a38c08f399c73aac42);
+            
+        
+
+        circle_marker_c388501d490258a368991238f725b87b.bindPopup(popup_7ba0737623c9ee68f25c27cd59e3a813)
+        ;
+
+        
+    
+    
+            var circle_marker_8daa60393db830b4926f7ecdf220aab9 = L.circleMarker(
+                [42.9772692, -88.1042709],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_85203d34788362f622f0770aa6d32c56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c1168c73a14c5f7f5f0ab394c1164ff = $(`<div id="html_2c1168c73a14c5f7f5f0ab394c1164ff" style="width: 100.0%; height: 100.0%;">Facility: WI - New Berlin<br>Customers: 5825<br>Avg Drive Time: 77.81 mins</div>`)[0];
+                popup_85203d34788362f622f0770aa6d32c56.setContent(html_2c1168c73a14c5f7f5f0ab394c1164ff);
+            
+        
+
+        circle_marker_8daa60393db830b4926f7ecdf220aab9.bindPopup(popup_85203d34788362f622f0770aa6d32c56)
+        ;
+
+        
+    
+    
+            var circle_marker_898e2a5d642fcfbe6eedc8421327b348 = L.circleMarker(
+                [42.104036, -87.79581],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_9864838d469f73f29abc255c7f5b0260 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa41f1438892da49f6a9fa38f0d258ec = $(`<div id="html_aa41f1438892da49f6a9fa38f0d258ec" style="width: 100.0%; height: 100.0%;">Facility: Northbrook (Outdoor)<br>Customers: 9670<br>Avg Drive Time: 12.98 mins</div>`)[0];
+                popup_9864838d469f73f29abc255c7f5b0260.setContent(html_aa41f1438892da49f6a9fa38f0d258ec);
+            
+        
+
+        circle_marker_898e2a5d642fcfbe6eedc8421327b348.bindPopup(popup_9864838d469f73f29abc255c7f5b0260)
+        ;
+
+        
+    
+    
+            var circle_marker_ea72cd30340cf9b62c57d32ee846b86d = L.circleMarker(
+                [43.228617, -88.110369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_4949e6b8242db906ee4156a7e0c837e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9f3a47820a8e41651affad585969f08 = $(`<div id="html_f9f3a47820a8e41651affad585969f08" style="width: 100.0%; height: 100.0%;">Facility: WI - Germantown<br>Customers: 2709<br>Avg Drive Time: 108.72 mins</div>`)[0];
+                popup_4949e6b8242db906ee4156a7e0c837e8.setContent(html_f9f3a47820a8e41651affad585969f08);
+            
+        
+
+        circle_marker_ea72cd30340cf9b62c57d32ee846b86d.bindPopup(popup_4949e6b8242db906ee4156a7e0c837e8)
+        ;
+
+        
+    
+    
+            var circle_marker_da791ab1f92ad3f5ef1499514bb24fb4 = L.circleMarker(
+                [41.891277, -88.001864],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_5e02b7ee15d46db000e87f5f73d6ea38);
+        
+    
+        var popup_31c9581364d99680c70d0c3f8b6ed777 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cb824167b6d0754d4864ae957b1ba27 = $(`<div id="html_4cb824167b6d0754d4864ae957b1ba27" style="width: 100.0%; height: 100.0%;">Facility: Lombard<br>Customers: 3452<br>Avg Drive Time: 20.80 mins</div>`)[0];
+                popup_31c9581364d99680c70d0c3f8b6ed777.setContent(html_4cb824167b6d0754d4864ae957b1ba27);
+            
+        
+
+        circle_marker_da791ab1f92ad3f5ef1499514bb24fb4.bindPopup(popup_31c9581364d99680c70d0c3f8b6ed777)
+        ;
+
+        
+    
+</script>
